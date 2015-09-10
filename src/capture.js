@@ -1,15 +1,9 @@
 var saveScreenshots = require('./save-screenshots.js');
 var buildWebpage = require('./build-webpage.js');
+var compileConfig = require('./compile-config.js');
 
-var capture = {
-  buildAndSave: function(config) {
-    return saveScreenshots(config).then(buildWebpage).then(function(results) {
-      console.log('Published to "' + results.publishedTo  + '"');
-    });
-  },
-  publishToS3: function(path) {
-
-  }
+function capture(config) {
+  return saveScreenshots(compileConfig(config)).then(buildWebpage);
 };
 
 module.exports = capture;

@@ -30,7 +30,8 @@ function createUniqueDir(input) {
   return convertToSlug(input.title + '_' + Date.now());
 }
 
-module.exports = {
-  withPath: withPath,
-  withData: withData
-};
+function compileConfig(config) {
+  return typeof config === 'string' ? withPath(path) : withData(config);
+}
+
+module.exports = compileConfig;
