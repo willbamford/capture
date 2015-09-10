@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="page.css">
+  </head>
+  <body>
+
+    <h1>{{title}}</h1>
+
+    <table>
+      <tr>
+        {{#variants}}
+        <th>{{name}} ({{width}})</th>
+        {{/variants}}
+      </tr>
+      <tr>
+        {{#variants}}
+        <td class="capture">
+          <a href="{{filepath}}">
+            <img src="{{filepath}}">
+          </a>
+        </td>
+        {{/variants}}
+      </tr>
+    </table>
+
+  </body>
+</html>

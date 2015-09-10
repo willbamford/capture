@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+img {
+  background: black;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  display: block;
+  padding: 24px;
+}
+
+th {
+  font-weight: bold;
+}
+
+td, th {
+  padding: 8px;
+  vertical-align: top;
+}
