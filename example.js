@@ -62,20 +62,20 @@ var sections = {
     url: 'http://www.bbc.co.uk/news'
   },
   'bbc-iplayer': {
-    title: 'BBC News',
+    title: 'BBC iPlayer',
     url: 'http://www.bbc.co.uk/iplayer'
   },
   'bbc-cbeebies': {
-    title: 'BBC Homepage',
+    title: 'BBC CBeebies',
     url: 'http://www.bbc.co.uk/cbeebies'
   },
   'bbc-cbbc': {
-    title: 'BBC Homepage',
+    title: 'BBC CBBC',
     url: 'http://www.bbc.co.uk/cbbc'
   }
 };
 
-var config = buildConfig('bbc-news');
+var config = buildConfig('bbc-homepage');
 
 capture(config).then(function(results) {
   console.log('Published to "' + results.publishedTo  + '"');
