@@ -64,7 +64,7 @@ page.open(options.url, function(status) {
     console.log('Unable to load the address: ' + status);
     phantom.exit();
   } else {
-    console.log('Waiting for 10 seconds on ' + options.url);
+    console.log('Waiting for 5 seconds on ' + options.url);
     window.setTimeout(function() {
       page.render(options.filepath);
       console.log('URL ' + options.url + ' saved to ' + options.filepath);
